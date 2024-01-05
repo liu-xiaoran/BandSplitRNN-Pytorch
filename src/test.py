@@ -18,3 +18,21 @@ for match in matches:
     length = match.size
     matching_text = original_lyrics[start_orig:start_orig+length]
     print(f"原始歌词位置: {start_orig}, 识别歌词位置: {start_recog}, 长度: {length}, 匹配内容: '{matching_text}'")
+
+
+# 1 demucs
+# 2 ts+word
+# 3 转读音
+# 4 align：匈牙利算法
+
+# https://github.com/sanchit-gandhi/whisper-jax
+
+# 伴奏分离：https://github.com/amanteur/BandSplitRNN-Pytorch
+
+# 镜像：https://hf-mirror.com/
+
+# https://github.com/facebookresearch/demucs
+
+# https://github.com/SYSTRAN/faster-whisper?tab=readme-ov-file
+
+# root@192.168.0.31

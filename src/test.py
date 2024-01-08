@@ -20,19 +20,8 @@ for match in matches:
     print(f"原始歌词位置: {start_orig}, 识别歌词位置: {start_recog}, 长度: {length}, 匹配内容: '{matching_text}'")
 
 
-# 1 demucs
-# 2 ts+word
-# 3 转读音
-# 4 align：匈牙利算法
 
-# https://github.com/sanchit-gandhi/whisper-jax
+# python inference.py -i ../example/example.mp3 -o ../example/ -c ./saved_models/vocals/vocals_v2.pt -t vocals -d cuda
 
-# 伴奏分离：https://github.com/amanteur/BandSplitRNN-Pytorch
+# python inference.py -i ../example/example.mp3 -o ../example/ -c ./saved_models/vocals/vocals_v2.pt -t vocals -d cpu
 
-# 镜像：https://hf-mirror.com/
-
-# https://github.com/facebookresearch/demucs
-
-# https://github.com/SYSTRAN/faster-whisper?tab=readme-ov-file
-
-# root@192.168.0.31
